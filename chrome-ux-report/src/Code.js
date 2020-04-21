@@ -28,7 +28,7 @@ crux.cacheFlushWhitelist = [
 
 // Query used to pull data from BigQuery
 crux.dataQueryString =
-  'SELECT * FROM `chrome-ux-report.materialized.metrics_summary` WHERE origin = @url';
+  'SELECT * FROM `chrome-ux-report.materialized.device_summary` WHERE origin = @url';
 
 // Query used to validated URL from BigQuery
 crux.valudateQueryString =
@@ -102,6 +102,17 @@ crux.Schema = [
     label: 'origin',
     description:
       "The URL of the website including protocol and optional subdomain, for example 'https://www.example.com'.",
+    dataType: 'STRING',
+    semantics: {
+      conceptType: 'DIMENSION',
+      semanticType: 'TEXT'
+    }
+  },
+  {
+    name: 'device',
+    label: 'device',
+    description:
+      "Coarse device classification (“phone”, “tablet”, or “desktop”), as communicated via User-Agent.",
     dataType: 'STRING',
     semantics: {
       conceptType: 'DIMENSION',
