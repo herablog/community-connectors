@@ -299,6 +299,136 @@ crux.Schema = [
     }
   },
   {
+    name: 'fast_lcp',
+    label: 'Fast LCP',
+    description:
+      'The percent of Fast Largest Contentful Paint.',
+    dataType: 'NUMBER',
+    defaultAggregationType: 'SUM',
+    semantics: {
+      conceptType: 'METRIC',
+      semanticType: 'PERCENT',
+      isReaggregatable: true
+    }
+  },
+  {
+    name: 'avg_lcp',
+    label: 'Average LCP',
+    description:
+      'The percent of Average Largest Contentful Paint.',
+    dataType: 'NUMBER',
+    defaultAggregationType: 'SUM',
+    semantics: {
+      conceptType: 'METRIC',
+      semanticType: 'PERCENT',
+      isReaggregatable: true
+    }
+  },
+  {
+    name: 'slow_lcp',
+    label: 'Slow LCP',
+    description:
+      'The percent of Slow Largest Contentful Paint.',
+    dataType: 'NUMBER',
+    defaultAggregationType: 'SUM',
+    semantics: {
+      conceptType: 'METRIC',
+      semanticType: 'PERCENT',
+      isReaggregatable: true
+    }
+  },
+  {
+    name: 'small_cls',
+    label: 'Small CLS',
+    description:
+      'The percent of Small Cumulative Layout Shift.',
+    dataType: 'NUMBER',
+    defaultAggregationType: 'SUM',
+    semantics: {
+      conceptType: 'METRIC',
+      semanticType: 'PERCENT',
+      isReaggregatable: true
+    }
+  },
+  {
+    name: 'medium_cls',
+    label: 'Medium CLS',
+    description:
+      'The percent of Medium Cumulative Layout Shift.',
+    dataType: 'NUMBER',
+    defaultAggregationType: 'SUM',
+    semantics: {
+      conceptType: 'METRIC',
+      semanticType: 'PERCENT',
+      isReaggregatable: true
+    }
+  },
+  {
+    name: 'large_cls',
+    label: 'Large CLS',
+    description:
+      'The percent of Large Cumulative Layout Shift.',
+    dataType: 'NUMBER',
+    defaultAggregationType: 'SUM',
+    semantics: {
+      conceptType: 'METRIC',
+      semanticType: 'PERCENT',
+      isReaggregatable: true
+    }
+  },
+  {
+    name: 'notification_permission_accept',
+    label: 'Notification Permission Accept',
+    description:
+      'The percent of Notification Permission sets accept.',
+    dataType: 'NUMBER',
+    defaultAggregationType: 'SUM',
+    semantics: {
+      conceptType: 'METRIC',
+      semanticType: 'PERCENT',
+      isReaggregatable: true
+    }
+  },
+  {
+    name: 'notification_permission_deny',
+    label: 'Notification Permission Deny',
+    description:
+      'The percent of Notification Permission sets deny.',
+    dataType: 'NUMBER',
+    defaultAggregationType: 'SUM',
+    semantics: {
+      conceptType: 'METRIC',
+      semanticType: 'PERCENT',
+      isReaggregatable: true
+    }
+  },
+  {
+    name: 'notification_permission_ignore',
+    label: 'Notification Permission Ignore',
+    description:
+      'The percent of Notification Permission sets ignore.',
+    dataType: 'NUMBER',
+    defaultAggregationType: 'SUM',
+    semantics: {
+      conceptType: 'METRIC',
+      semanticType: 'PERCENT',
+      isReaggregatable: true
+    }
+  },
+  {
+    name: 'notification_permission_dismiss',
+    label: 'Notification Permission Dismiss',
+    description:
+      'The percent of Notification Permission sets dismiss.',
+    dataType: 'NUMBER',
+    defaultAggregationType: 'SUM',
+    semantics: {
+      conceptType: 'METRIC',
+      semanticType: 'PERCENT',
+      isReaggregatable: true
+    }
+  },
+  {
     name: 'desktopDensity',
     label: 'Desktop',
     description: 'The proportion of experiences on desktop devices.',
