@@ -20,7 +20,7 @@
     "description": "Explore user experience stats about an origin in the Chrome UX Report",
     "sources": ["CHROME_UX_REPORT"],
     "templates": {
-      "default": "1KnizD-otKrkOHJ31LUXlt_6_9jTOLOmZ"
+      "default": "15a5e671-624d-41c1-95c9-d4351936eb05"
     }
   }
 }
